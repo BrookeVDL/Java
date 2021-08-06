@@ -45,7 +45,7 @@ class Square {
 	
 
 	
-public Square (int lenSqSide) throws InvalidSideException {
+ Square (int lenSqSide) throws InvalidSideException {
 		if(lenSqSide <= 0) {
 			throw new InvalidSideException("Side length must be greater than 0.");
 		
