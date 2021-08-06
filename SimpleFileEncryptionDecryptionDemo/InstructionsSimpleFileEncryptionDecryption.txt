@@ -1,0 +1,62 @@
+MyProgrammingLab; Java
+COP 3330
+					File Encryption and Decryption Simple Directions
+			
+I posted a tutorial in this week's module on working from the command line. If you have problems, watch at least the first 2 videos.
+
+Steps to complete Project 14
+1. Study and download the zip file of the code from File Encryption and Decryption Simple Example.
+
+2. Build and run the software. There is one small problem you will get when running it. If you read all of the web page text that the code comes from, it should be easy to fix. DO NOT CHANGE THE PROGRAM TO OPEN THE FILE FROM A DIFFERENT LOCATION OR A DIFFERENT FILENAME. LEAVE THAT CODE UNCHANGED. Just 1 line of code needs to be changed and requires you to just read the error message you get and be able to count. No research into padding required. In order to know if the program ran correctly, you need to have looked at the code and understand what it is doing.
+
+3. Export the project as an executable jar file, named jf.jar as in Creating a New Runnable JAR File
+
+
+4. Naming the file jf.jar is worth points.
+
+5. Verify that your jar file is not signed as in Verifying Signed JAR File
+
+If you have trouble doing this, watch the video I made named Verifying a jar is signed.mp4
+
+If you receive the "'jarsigner' is not recognized as an internal or external command, operable program or batch file." response to the jarsigner command,
+
+There are 2 solutions to this problem.
+
+1. Find where jarsigner.exe is located and add it to your path variable.
+
+For me it is found at C:\Program Files\Java\jdk1.8.0_40\bin.
+
+To see how to do this you can visit computerhope (Links to an external site.)
+
+or refer to the "Before You Begin" section of out textbook (page xl).
+
+2. When entering the command, supply the entire path.
+
+For me it would be "C:\Program Files\Java\jdk1.8.0_40\bin\jarsigner" - verify DecryptEncrypt.jar
+
+Option 2 is easier, but option 1 keeps you from needing to type that full path every time AND is the proper way to do it.
+
+We will use the keytool to create a keystore before our second use of jarsigner - verify. The purpose of using it both before and after is to see the difference in the response to the command after signing the jar file.
+
+5. Sign the executable jar file as in How to Create a (Self-)Signed Jar. There is a small problem in the signing step, but if you hover over each part of the command and read what each part means, their mistake should be obvious. Finding this issue is part of the assignment.
+
+6. Verify that your jar file IS signed as in Verifying Signed JAR Files.
+
+    You should see something like
+
+Warning:
+This jar contains entries whose certificate chain is invalid. Reason: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+This jar contains entries whose signer certificate is self-signed.
+This jar contains signatures that do not include a timestamp. Without a timestamp, users may not be able to validate this jar after any of the signer certificates expire (as early as 2021-11-20).
+
+7. Submit all code (3 .java files) and the jar file. Do not zip them.
+
+8. In the Project.txt file (not in your code) list what you did not accomplish. You will lose fewer points for documented issues than undocumented ones. Examples would be:
+
+    A. I could not sign the jar.
+
+    B. The jar file does not run.
+
+    C. All requirements have been met.
+
+9. If you get stuck, email me.
