@@ -1,4 +1,4 @@
-package MyProgrammingLab;
+package DuplicateElimination;
 
 /*Assignment 72020
 Written by: Brooke VanDerLinden*/

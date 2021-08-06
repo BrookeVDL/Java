@@ -1,4 +1,4 @@
-package MyProgrammingLab;
+package JavaIntegerIO;
 
 // Exercise 72000: Arithmetic.java
 // Author: Brooke VanDerLinden

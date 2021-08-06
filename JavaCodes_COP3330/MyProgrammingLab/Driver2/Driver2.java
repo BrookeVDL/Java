@@ -1,4 +1,4 @@
-package MyProgrammingLab;
+package Driver2;
 
 //Exercise 72037: Driver.java
 	//Author: Brooke VanDerLinden
@@ -7,14 +7,14 @@ package MyProgrammingLab;
 		Define class InvalidSideException
 			- inherits from the Exception class
 			
-		Define class Square
+		Define class Squares
 			1* Method variable sideLength 
 				to describe side length
 			Constructor that takes one argument that if 
 				is not greater than 0 it should throw an 
 				InvalidSideError
 			Method getArea()
-				Returns the area of the Square
+				Returns the area of the Squares
 			
 		Define class Driver
 			Main method, public
@@ -39,7 +39,7 @@ class InvalidSideException extends Exception {
 		}
 	}
 			  
-//Define class Square
+//Define class Squares
 class Square {
 	int lenSqSide;  //Method variable describing the squares side length 
 	
@@ -53,7 +53,7 @@ class Square {
 				this.lenSqSide = lenSqSide;
 		}
 	}
-		//Method to return the area of the Square
+		//Method to return the area of the Squares
 		public int calculateArea() {
 			return lenSqSide * lenSqSide;
 		}

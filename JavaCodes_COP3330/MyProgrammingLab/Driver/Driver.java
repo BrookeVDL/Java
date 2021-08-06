@@ -1,4 +1,4 @@
-package MyProgrammingLab;
+package Driver;
 
 /*Assignment 72123
 	Rectangle Class with double attributes len & width

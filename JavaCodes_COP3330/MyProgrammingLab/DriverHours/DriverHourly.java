@@ -1,4 +1,4 @@
-package MyProgrammingLab;
+package DriverHours;
 
 /*				~ HourlyEmployee class that inherits from Employee~
 

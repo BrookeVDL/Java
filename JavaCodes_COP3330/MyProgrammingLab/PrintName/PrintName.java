@@ -1,4 +1,4 @@
-package MyProgrammingLab;
+package PrintName;
 
 //Author: Brooke VanDerLinden
 //Date: 5/18/2021

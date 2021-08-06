@@ -1,4 +1,4 @@
-package MyProgrammingLab;
+package DriverShape;
 
 
 /*				~Implement the Shape hierarch~
@@ -72,7 +72,7 @@ public class DriverShape {
         System.out.print("Enter side of Sq:");
         double side1 = sc.nextDouble();
 
-        TwoDimensionalShape s = new SquareShape(side1);
+        TwoDimensionalShape s = new Shape(side1);
 
         System.out.printf("Area: %.2f \nPerimeter: %.2f", s.getArea(), s.getPerimeter());
         break;
@@ -191,10 +191,10 @@ class Circle extends TwoDimensionalShape {
 /*Sq
  	Class Implementation
  	inherits from TwoDimensionalShape */
-public class SquareShape extends TwoDimensionalShape {
+public class Squares extends TwoDimensionalShape {
 	private double side;
 	
-	SquareShape(double s) {
+	Squares(double s) {
 		side = s;
 	}
 

@@ -1,4 +1,4 @@
-package MyProgrammingLab;
+package StringCompare;
 
 /*				~String method regionMatches~
 
