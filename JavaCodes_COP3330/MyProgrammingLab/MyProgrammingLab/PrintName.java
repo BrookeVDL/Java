@@ -9,8 +9,9 @@ package MyProgrammingLab;
 
 public class PrintName {
 	
+
 //Main method to start the Java application
-	public static void main (String[] args){
-	System.out.println("Gershwin, George");
-		  }
+public static void main (String[] args){
+	  System.out.println("Gershwin, George");
 	}
+}
